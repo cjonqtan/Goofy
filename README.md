@@ -3,7 +3,7 @@ Goofy
 
 My work in DV1485 at Blekinge Institute of Technology.
 
-This webb-base is build on Anax-base created by Mikael Roos.
+Goofy is built on "Anax-base", created by Mikael Roos.
 
 
 License 
