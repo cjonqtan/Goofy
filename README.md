@@ -1,7 +1,9 @@
 Goofy
 ======
 
-My work in DV1485 at Blekinge Institute of Technology
+My work in DV1485 at Blekinge Institute of Technology.
+
+This webb-base is build on Anax-base created by Mikael Roos.
 
 
 License 
@@ -24,16 +26,10 @@ The following external modules are included and subject to its own license.
 * License: MIT license 
 * Path: included in `webroot/js/modernizr.js`
 
-###Goofy-base
+###Anax-base
 * Website: http://dbwebb.se/kunskap/Goofy-en-hallbar-struktur-for-dina-webbapplikationer
 * License: MIT license
 * Built by Mikael Roos.
-
-
-
-History
------------------------------------
-
 
 ------------------
 
