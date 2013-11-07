@@ -1,6 +1,6 @@
 <?php
 /**
- * Config-file for Anax. Change settings here to affect installation.
+ * Config-file for Goofy. Change settings here to affect installation.
  *
  */
 
@@ -14,18 +14,18 @@ ini_set('output_buffering', 0);   // Do not buffer outputs, write directly
 
 
 /**
- * Define Anax paths.
+ * Define Goofy paths.
  *
  */
-define('ANAX_INSTALL_PATH', __DIR__ . '/..');
-define('ANAX_THEME_PATH', ANAX_INSTALL_PATH . '/theme/render.php');
+define('GOOFY_INSTALL_PATH', __DIR__ . '/..');
+define('GOOFY_THEME_PATH', GOOFY_INSTALL_PATH . '/theme/render.php');
 
 
 /**
  * Include bootstrapping functions.
  *
  */
-include(ANAX_INSTALL_PATH . '/src/bootstrap.php');
+include(GOOFY_INSTALL_PATH . '/src/bootstrap.php');
 
 
 /**
@@ -92,4 +92,3 @@ $goofy['javascript_include'] = array();
  * Google analytics.
  *
  */
-$goofy['google_analytics'] = 'UA-38445302-3'; 

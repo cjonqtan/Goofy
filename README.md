@@ -24,8 +24,8 @@ The following external modules are included and subject to its own license.
 * License: MIT license 
 * Path: included in `webroot/js/modernizr.js`
 
-###Anax-base
-* Website: http://dbwebb.se/kunskap/anax-en-hallbar-struktur-for-dina-webbapplikationer
+###Goofy-base
+* Website: http://dbwebb.se/kunskap/Goofy-en-hallbar-struktur-for-dina-webbapplikationer
 * License: MIT license
 * Built by Mikael Roos.
 

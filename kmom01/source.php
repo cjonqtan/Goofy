@@ -16,5 +16,5 @@ $goofy['stylesheets'][] = "css/source.css";
 $goofy['main'] = $source->View();
 
 
-// Finally, leave it all to the rendering phase of Anax.
-include(ANAX_THEME_PATH);
+// Finally, leave it all to the rendering phase of Goofy.
+include(GOOFY_THEME_PATH);

@@ -1,6 +1,6 @@
 <?php 
 /**
- * This is a Anax pagecontroller.
+ * This is a Goofy pagecontroller.
  *
  */
 
@@ -8,7 +8,7 @@
 include(__DIR__.'/config.php'); 
 
 
-// Do it and store it all in variables in the Anax container.
+// Do it and store it all in variables in the Goofy container.
 $goofy['title'] = "Redovisningar";
 
 $goofy['main'] = <<<EOD
@@ -41,5 +41,5 @@ $goofy['main'] = <<<EOD
 EOD;
 
 
-// Finally, leave it all to the rendering phase of Anax.
-include(ANAX_THEME_PATH);
+// Finally, leave it all to the rendering phase of Goofy.
+include(GOOFY_THEME_PATH);

@@ -1,6 +1,6 @@
 <?php
 /**
- * Bootstrapping functions, essential and needed for Anax to work together with some common helpers. 
+ * Bootstrapping functions, essential and needed for Goofy to work together with some common helpers. 
  *
  */
 
@@ -18,7 +18,7 @@ function dump($array) {
  *
  */
 function myExceptionHandler($exception) {
-  echo "Anax: Uncaught exception: <p>" . $exception->getMessage() . "</p><pre>" . $exception->getTraceAsString(), "</pre>";
+  echo "Goofy: Uncaught exception: <p>" . $exception->getMessage() . "</p><pre>" . $exception->getTraceAsString(), "</pre>";
 }
 set_exception_handler('myExceptionHandler');
 
@@ -28,7 +28,7 @@ set_exception_handler('myExceptionHandler');
  *
  */
 function myAutoloader($class) {
-  $path = ANAX_INSTALL_PATH . "/src/{$class}/{$class}.php";
+  $path = GOOFY_INSTALL_PATH . "/src/{$class}/{$class}.php";
   if(is_file($path)) {
     include($path);
   }
