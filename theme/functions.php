@@ -15,6 +15,7 @@ function get_title($title) {
   return $title . (isset($goofy['title_append']) ? $goofy['title_append'] : null);
 }
 
+
 function get_navbar($menu) {
 	$html = "<nav>";
   	foreach($menu['items'] as $item) {

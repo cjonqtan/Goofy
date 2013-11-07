@@ -49,6 +49,8 @@ $goofy['header'] = <<<EOD
 <h4>Ska det kodas så ska det kodas ordentligt!</h4>
 EOD;
 
+
+
 $goofy['navbar'] = array(
 	'class' => '',
 	'items' => array(
@@ -62,7 +64,6 @@ $goofy['navbar'] = array(
 		}
 	}
 );
-
 $goofy['footer'] = <<<EOD
 <a target="_blank" href="http://www.jonatankarlsson.se">Jonatan Karlsson &copy; 2013</a>
 EOD;

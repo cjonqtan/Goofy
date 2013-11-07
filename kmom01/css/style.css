@@ -69,6 +69,9 @@
 
 /*  Blogg
 -------------------------------------------------------------*/
+  article p:first-child{
+    text-indent: 0;
+  }
   .post-holder{
     margin:0 6px 25px 6px;
     border-bottom:1px dashed #DDD;
