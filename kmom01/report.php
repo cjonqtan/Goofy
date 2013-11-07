@@ -16,22 +16,6 @@ $goofy['main'] = <<<EOD
 	<div class="post-holder">
 		<header class="post-head">
 			<div class="post-title">
-				<h3 id="kmom02"><a href="#">Kmom02</a></h3>
-			</div>
-			<div class="post-meta">
-				<p>2013-10-04 15:30</p>
-			</div>
-		</header>
-		<article class="post-content">
-			<p>Redovisning här</p>
-		</article>
-		<footer class="post-foot">
-			<div class="byline">Skriven av <a href="#">Jonatan Karlsson</a></div>			
-		</footer>
-	</div>
-	<div class="post-holder">
-		<header class="post-head">
-			<div class="post-title">
 				<h3 id="kmom01"><a href="#">Kmom01</a></h3>
 			</div>
 			<div class="post-meta">
