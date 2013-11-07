@@ -32,8 +32,9 @@
     text-align: center;
     padding-bottom: 25px;
   }
-  #site-head h1{
+  #site-head h1, #site-head a{
     font-size:80px;
+    color:inherit;
   }
   #site-head h1 a:hover {
     color:#000;
