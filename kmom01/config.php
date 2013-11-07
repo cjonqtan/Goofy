@@ -92,4 +92,4 @@ $goofy['javascript_include'] = array();
  * Google analytics.
  *
  */
-$goofy['google_analytics'] = null; 
+$goofy['google_analytics'] = 'UA-38445302-3'; 
