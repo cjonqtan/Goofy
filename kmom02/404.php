@@ -7,14 +7,16 @@
 include(__DIR__.'/config.php'); 
 
 
+
 // Do it and store it all in variables in the Goofy container.
-$goofy['title'] = "Hem";
+$goofy['title'] = "404";
+$goofy['main'] = "
+<h1>Error 404</h1>
+<p>Sidan du söker efter finns inte.</p>";
 
-$goofy['main'] = <<<EOD
-<h1>Hej Världen!</h1>
-<p>Mitt namn är Jonatan Karlsson och är 19 år gammal. Jag kommer ifrån en liten by utanför Varberg som heter Veddige. Den 28 augusti flyttade jag ner till Karlskrona för att börja plugga webbprogrammering på Blekinges Tekniska Högskola.</p>
+// Send the 404 header 
+header("HTTP/1.0 404 Not Found");
 
-EOD;
 
 // Finally, leave it all to the rendering phase of Goofy.
 include(GOOFY_THEME_PATH);

@@ -3,33 +3,21 @@
 <head>
 <meta charset='utf-8'/>
 <title><?=get_title($title)?></title>
-<?php if(isset($inlinestyle)):?><style type="text/css"><?=$inlinestyle;?></style><?php endif;?>
-
-<?php if(isset($favicon)): ?><link rel='shortcut icon' href='<?=$favicon?>'/><?php endif; ?>
+<?php if(isset($favicon)): ?>
+<link rel='shortcut icon' href='<?=$favicon?>'/>
+<?php endif; ?>
 <?php foreach($stylesheets as $val): ?>
 <link rel='stylesheet' type='text/css' href='<?=$val?>'/>
 <?php endforeach; ?>
 <script src='<?=$modernizr?>'></script>
 </head>
 <body>
-<div class="wrapper" id="content">
-	<div id="site-head">
-		<header role="banner">
-			<?=$header?>
-		</header>
-	</div>
-		<div id="menu">
-			<div  role="navigation" id="nav-items"><?=isset($navbar) ? get_navbar($navbar) : null ?></div>
-		</div>
-	<div id="content-wrapper">
-		<main id="main-content" role="main">
-			<?=$main?>
-		</main>
-	</div>
-		<footer id="footer">
-			<nav><?=$footer?> <a href="http://validator.w3.org/unicorn/check?ucn_uri=referer&amp;ucn_task=conformance">Unicorn</a></nav>			
-		</footer>
-</div>
+  <div id='wrapper'>
+    <div id='header'><?=$header?></div>
+    <div id="nav"><?=isset($navbar) ? get_navbar($navbar) : null ?></div>
+    <div id='main'><?=$main?></div>
+    <div id='footer'><?=$footer?></div>
+  </div>
 
 <?php if(isset($jquery)):?><script src='<?=$jquery?>'></script><?php endif; ?>
 
@@ -45,5 +33,6 @@
   s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 <?php endif; ?>
+
 </body>
 </html>

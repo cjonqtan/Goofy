@@ -42,7 +42,7 @@ $goofy = array();
  *
  */
 $goofy['lang'] = 'sv';
-$goofy['title_append'] = ' | oophp';
+$goofy['title_append'] = '';
 
 $goofy['header'] = <<<EOD
 <img class='sitelogo' src='img/anax.png' alt='Anax Logo'/>
@@ -50,6 +50,8 @@ $goofy['header'] = <<<EOD
 <span class='siteslogan'>Återanvändbara moduler för webbutveckling med PHP</span>
 EOD;
 
+// 
+$goofy['navExplode'] = "|";
 
 
 $goofy['navbar'] = array(
@@ -57,6 +59,7 @@ $goofy['navbar'] = array(
 	'items' => array(
 		'hem' => array('text'=>'Hem',  'url'=>'index.php'),
 		'redovisning' => array('text'=>'Redovisning', 'url'=>'report.php'),
+		'Träningsspelet' => array('text'=>'Träningsspelet', 'url'=>'dice.php'),
 		'kallkod' => array('text'=>'Källkod', 'url'=>'source.php'),
 	),
 	'callback_selected' => function($url) {
@@ -66,10 +69,11 @@ $goofy['navbar'] = array(
 	}
 );
 $goofy['footer'] = <<<EOD
-<a target="_blank" href="http://www.jonatankarlsson.se">Jonatan Karlsson &copy; 2013</a>
+<div class="center-text">
+<a target="_blank" href="http://www.jonatankarlsson.se">Jonatan Karlsson &copy; 2013</a></div>
 EOD;
 
-//$goofy['stylesheets'][] = 'css/standard.min.css';
+$goofy['stylesheets'][] = 'css/standard.min.css';
 $goofy['stylesheets'][] = 'css/style.css';
 
 $goofy['inlinestyle'] = null;
