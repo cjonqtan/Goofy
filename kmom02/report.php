@@ -37,6 +37,67 @@ $goofy['main'] = <<<EOD
 			<div class="byline">Skriven av <a target="_blank" href="http://www.jonatankarlsson.se">Jonatan Karlsson</a></div>			
 		</footer>
 	</div>
+	<div class="post-holder">
+		<header class="post-head">
+			<div class="post-title">
+				<h2 id="kmom02"><a href="#">Kmom02</a></h2>
+			</div>
+			<div class="post-meta">
+			
+			</div>
+		</header>
+		<article class="post-content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</article>
+		<footer class="post-foot">
+			<div class="byline">Skriven av <a target="_blank" href="http://www.jonatankarlsson.se">Jonatan Karlsson</a></div>			
+		</footer>
+	</div>
+	<div class="post-holder">
+		<header class="post-head">
+			<div class="post-title">
+				<h2 id="kmom03"><a href="#">Kmom03</a></h2>
+			</div>
+			<div class="post-meta">
+			
+			</div>
+		</header>
+		<article class="post-content">
+			
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</article>
+		<footer class="post-foot">
+			<div class="byline">Skriven av <a target="_blank" href="http://www.jonatankarlsson.se">Jonatan Karlsson</a></div>			
+		</footer>
+	</div>
 </section>
 EOD;
 

@@ -42,17 +42,13 @@ $goofy = array();
  *
  */
 $goofy['lang'] = 'sv';
-$goofy['title_append'] = '';
+$goofy['title_append'] = ' | Goofy webbtemplate';
 
 $goofy['header'] = <<<EOD
 <img class='sitelogo' src='img/anax.png' alt='Anax Logo'/>
 <span class='sitetitle'>Goofy webbtemplate</span>
 <span class='siteslogan'>Återanvändbara moduler för webbutveckling med PHP</span>
 EOD;
-
-// 
-$goofy['navExplode'] = "|";
-
 
 $goofy['navbar'] = array(
 	'class' => '',

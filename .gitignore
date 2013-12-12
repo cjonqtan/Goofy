@@ -3,6 +3,8 @@
 *.sqlite
 *.log
 
+
+todo
 sftp-config.json
 oophp.sublime-workspace
 oophp.sublime-project

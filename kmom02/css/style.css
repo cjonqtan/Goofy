@@ -36,10 +36,15 @@ a:hover {
 #nav nav {
   margin-left:6px;
 }
-#nav nav  a {
+#nav nav a {
   text-align: center;
   margin-right: 3px;
+  margin-left: 3px;
   color:#000;
+}
+#nav nav a:first-child{}
+#nav nav a:last-child {
+  margin-left: 0;
 }
 #nav nav a:after{
   content: '|';
@@ -106,16 +111,15 @@ a:hover {
   }
   .post-head{
     display: inline-block;
-    height: 25px;
-    /*width: 590px;*/
-    width: auto;
+    height: 35px;
+    width: 100%;
   }
   .post-title{
     float:left;
   }
   .post-meta{
     margin-top: 11px;
-    margin-right:25px;
+    margin-right: 6px;
     float:right;
     font-size: smaller;
     font-style: italic;
