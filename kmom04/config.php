@@ -23,8 +23,8 @@ define('GOOFY_THEME_PATH', GOOFY_INSTALL_PATH . '/theme/render.php');
 
 
 /**
- * Include bootstrapping functions.
- *
+ * Include bootstrapping functions and dbconfig.
+ * 
  */
 include(GOOFY_INSTALL_PATH . '/src/bootstrap.php');
 include(GOOFY_INSTALL_PATH . '/src/dbconfig.php');
@@ -93,9 +93,9 @@ $goofy['javascript_include'] = array();
 
 /**
  * Settings for the database.
- *
+ * Constants is defined in dbconfig.php
  */
-$goofy['database']['dsn']            = 'mysql:host=blu-ray.student.bth.se;dbname=jokd13;';
+$goofy['database']['dsn']            = DB_DSN;
 $goofy['database']['username']       = DB_USER;
 $goofy['database']['password']       = DB_PASSWORD;
 $goofy['database']['driver_options'] = array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'");
