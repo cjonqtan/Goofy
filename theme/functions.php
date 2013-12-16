@@ -15,7 +15,10 @@ function get_title($title) {
   return $title . (isset($goofy['title_append']) ? $goofy['title_append'] : null);
 }
 
-
+/**
+ * Generates a menubar
+ * 
+ */
 function get_navbar($menu) {
 	$html = "<nav>";
   	foreach($menu['items'] as $item) {
@@ -25,7 +28,4 @@ function get_navbar($menu) {
 	$html .= "</nav>";
 	return $html;
 }
-
-
-
 

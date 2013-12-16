@@ -1,0 +1,148 @@
+/**
+ * General elements
+ */
+body {
+  color: #333;
+  font-family: arial, sans-serif;
+}
+a{
+  color:#333;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+/**
+ * Layout of the main page elements 
+ */
+#wrapper {
+  margin: 0 auto;
+  width: 980px; 
+  padding: 10px;
+}
+
+
+/**
+ * Layout for header
+ */
+#header {
+  position: relative;
+  margin-bottom: 40px;
+}
+#nav {
+  margin-bottom: 22px;
+}
+#nav nav {
+  margin-left:6px;
+}
+#nav nav a {
+  text-align: center;
+  margin-right: 3px;
+  margin-left: 3px;
+  color:#000;
+}
+#nav nav a:first-child{}
+#nav nav a:last-child {
+  margin-left: 0;
+}
+#nav nav a:after{
+  content: '|';
+}
+#nav nav a:last-child:after {
+  content: '';
+}
+.selected {
+  font-weight: bold;
+}
+.selected:after {
+  font-weight: normal;
+}
+.selected:hover {
+  text-decoration:none;
+}
+
+
+.sitetitle {
+  position: absolute;
+  top: 6px;
+  left: 130px;
+  font-size: 48px;
+}
+
+.siteslogan {
+  position: absolute;
+  top: 65px;
+  left: 130px;
+  font-style: italic;
+  color: #666;
+}
+
+
+/**
+ * Layout for main
+ */
+#main {
+  min-height: 20em;
+}
+
+
+/**
+ * Layout for footer
+ */
+#footer {
+  margin-top: 40px;
+  border-top: 1px solid #ccc;
+  padding-top: 15px;
+}
+
+.sitefooter {
+  color: #666;
+}
+/*  Blogg
+-------------------------------------------------------------*/
+  article p:first-child{
+    text-indent: 0;
+  }
+  .post-holder{
+    margin:0 6px 25px 6px;
+    border-bottom:1px dashed #DDD;
+    padding-bottom:6px;
+  }
+  .post-head{
+    display: inline-block;
+    height: 35px;
+    width: 100%;
+  }
+  .post-title{
+    float:left;
+  }
+  .post-meta{
+    margin-top: 11px;
+    margin-right: 6px;
+    float:right;
+    font-size: smaller;
+    font-style: italic;
+  }
+  .post-content{
+    text-align: justify;
+    margin-right:9px;
+  }
+  .post-foot{
+    display: inline-block;
+    margin-top:25px;
+    height: 25px;
+    width: 590px;
+  }
+  .byline{
+    float:left;
+    font-style: italic;
+  }
+  .byline > * {
+    font-style: italic;
+  }
+  .comment{
+    margin-bottom:2px;
+    margin-right:25px;
+    float:right;
+  }
