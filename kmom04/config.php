@@ -59,7 +59,10 @@ $goofy['navbar'] = array(
 		'redovisning' => array('text'=>'Redovisning', 'url'=>'report.php'),
 		'Träningsspelet' => array('text'=>'Träningsspelet', 'url'=>'dice.php'),
 		'Filmdatabasen' => array('text'=>'Filmdatabasen', 'url'=>'movie.php'),
+		'login' => array('text' => isset($_SESSION['user']) ? 'Logga ut' :'Logga in' , 'url' =>  isset($_SESSION['user']) ? 'login.php?logout' : 'login.php'),
+		//'logout' => array('text' => 'Logga ut', 'url' => 'logout.php?logout'),
 		'kallkod' => array('text'=>'Källkod', 'url'=>'source.php'),
+
 	),
 	'callback_selected' => function($url) {
 		if(basename($_SERVER['SCRIPT_FILENAME']) == $url) {
