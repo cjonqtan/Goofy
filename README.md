@@ -3,7 +3,7 @@ Goofy
 
 My work in DV1485 at Blekinge Institute of Technology.
 
-Goofy is built on "Anax-base", created by Mikael Roos.
+Goofy is built on "Anax", created by Mikael Roos.
 
 
 License 
@@ -26,8 +26,8 @@ The following external modules are included and subject to its own license.
 * License: MIT license 
 * Path: included in `webroot/js/modernizr.js`
 
-###Anax-base
-* Website: http://dbwebb.se/kunskap/Goofy-en-hallbar-struktur-for-dina-webbapplikationer
+###Anax
+* Website: https://github.com/mosbth/Anax-base
 * License: MIT license
 * Built by Mikael Roos.
 
