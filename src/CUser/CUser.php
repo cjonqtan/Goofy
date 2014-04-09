@@ -1,5 +1,11 @@
 <?php
-
+/**
+ *
+ * @author Jonatan Karlsson, me@jonatankarlsson.se
+ * @copyright Jonatan Karlsson 2014
+ * @package Goofy
+ * 
+ */
 class CUser extends CDatabase {
 
 	protected $database = array();
@@ -26,7 +32,7 @@ class CUser extends CDatabase {
 		$pass = isset($data['password']) ? htmlentities($data['password']) : null;
 		$user = isset($data['username']) ? htmlentities($data['username']) : null;
 		
-		if(!$res = $this->Select($sql,array($user, $pass),true)) {
+		if(!$res = $this->Select($sql,array($user, $pass),DEBUG)) {
 			dump($this->stmt->errorInfo());
 			dump($res);
 			header('Location: login.php?error');
@@ -49,13 +55,13 @@ class CUser extends CDatabase {
 		
 		$sql = "INSERT INTO {$this->database['table']} (username, password, salt) VALUES ('{$username}','{$password}',unix_timestamp())";
 
-		if(!$this->Execute($sql,array(),true)) {
+		if(!$this->Execute($sql,array(),DEBUG)) {
 			throw new Exception("Something went wrong when executing this: {$sql}", 1);			
 		}
 
 		$sql = "UPDATE {$this->database['table']} SET password = md5(concat(?,salt)) WHERE username = ? ; ";
 
-		if(!$this->Execute($sql,array($password,$username),true)) {
+		if(!$this->Execute($sql,array($password,$username),DEBUG)) {
 			throw new Exception("Something went wrong when executing this: {$sql}", 1);			
 		}
 	}

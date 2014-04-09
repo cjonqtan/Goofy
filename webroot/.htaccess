@@ -1,0 +1,7 @@
+# http://httpd.apache.org/docs/current/mod/core.html#errordocument
+
+ErrorDocument 404 404.php
+ErrorDocument 500 500.php
+ErrorDocument 403 403.php
+
+#ErrorDocument 404 "This is a Goofy 404. Document is not here."

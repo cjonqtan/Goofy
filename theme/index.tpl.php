@@ -18,8 +18,7 @@ if(isset($modernizr)):
   <div id='wrapper'>
     <div id='header'><?=$header?></div>
     <div id="nav"><?=isset($navbar) ? get_navbar($navbar) : null ?></div>
-    <div id='main'><?=$main?></div>
-   
+    <div id='main'><?=$main?></div>   
     <div id='footer'><?=$footer?></div>
   </div>
 

@@ -1,5 +1,12 @@
 <?php
 
+/**
+ *
+ * @author Jonatan Karlsson, me@jonatankarlsson.se
+ * @copyright Jonatan Karlsson 2013
+ * @package Goofy
+ * 
+ */
 class CContent extends CDatabase {
 
 	protected $database = array();

@@ -1,9 +1,13 @@
 <?php
 
 /**
-* Database wrapper, provides a database API for the framework but hides details of implementation.
-*
-*/
+ * Database wrapper, provides a database API for the framework but hides details of implementation.
+ * 
+ * @author Jonatan Karlsson, me@jonatankarlsson.se
+ * @copyright Jonatan Karlsson 2014
+ * @package Goofy
+ * 
+ */
 class CDatabase {
 
 	/**
@@ -65,8 +69,9 @@ class CDatabase {
 		$this->stmt->execute($params);
 
 		if(!$this->stmt->execute($params)) {
-				
-			die(dump($this->stmt->errorInfo()));
+			if($debug) {
+				dump($this->stmt->errorInfo());
+			}
 		}
 		return $this->stmt->fetchAll();
 	}
