@@ -12,7 +12,7 @@ include(__DIR__.'/config.php');
 $goofy['title'] = "Redovisningar";
 
 $goofy['main'] = <<<EOD
-<section class="border-left border-right" >
+<section  class="border-left border-right" >
 	<div class="post-holder">
 		<header class="post-head">
 			<div class="post-title">
@@ -43,13 +43,22 @@ $goofy['main'] = <<<EOD
 				<h2 id="kmom02"><a href="#">Kmom02</a></h2>
 			</div>
 			<div class="post-meta">
+			
 			</div>
 		</header>
 		<article class="post-content">
-			<p>Jag gillar starkt att jobba med objektorienterad struktur. Tycker de är mycket smidigt då man separerar "logiken" och htmlen på ett bra sätt. Har jobbat en del med OOP i andra språk och måste säga att desto mer man jobbar med det destu bättre tycker man om det. Tror den objektorienterad strukturen är hur bra som helst när man jobbar i grupp. För då kan man dela upp arbetet på ett enkelt sätt.</p>
-			<p>Jag läste igenom "oophp 20 steg" guiden, gjorde delar som jag tyckte va intressant men inte mer än så. Tyckte den tog upp de mesta, allafall de som jag kan tänka mig. </p>
-			<p>Jag valde att göra träningsspelet då vi gjorde månadens babe på labben.</p>
-	<p> När jag gjorde träningsspelet så tog jag lite av mos exempel från "20 steg guiden", sen utveckla jag det lite med CDiceImage som fixar fram en fin bild beroende på va diceFace har för värde. Sen var det bara att koda dice.php med lite fin game logik. Inga konstigheter tycker jag. Utan de gick rätt bra. Hade lite problem när jag bestämde mig för att byta namn på CGameRound till CGameRound, tänkte aldrig på att uppdatera dice.php så hade massa konstiga krachar ett tag. Men sen insåg jag mitt fel och fixade det. Det var ju inte det svåraste felet, måste varit trött eller något. </p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</article>
 		<footer class="post-foot">
 			<div class="byline">Skriven av <a target="_blank" href="http://www.jonatankarlsson.se">Jonatan Karlsson</a></div>			
@@ -61,11 +70,29 @@ $goofy['main'] = <<<EOD
 				<h2 id="kmom03"><a href="#">Kmom03</a></h2>
 			</div>
 			<div class="post-meta">
-				
+			
 			</div>
 		</header>
 		<article class="post-content">
 			
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</article>
 		<footer class="post-foot">
 			<div class="byline">Skriven av <a target="_blank" href="http://www.jonatankarlsson.se">Jonatan Karlsson</a></div>			

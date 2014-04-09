@@ -9,7 +9,7 @@ class CDatabase {
 	/**
 	* Members
 	*/
-	private $options;                   // Options used when creating the PDO object
+	protected $options;                   // Options used when creating the PDO object
 	protected $db   = null;               // The PDO object
 	protected $stmt = null;               // The latest statement used to execute a query
 	private static $numQueries = 0;     // Count all queries made
@@ -22,7 +22,7 @@ class CDatabase {
 	* @param array $options containing details for connecting to the database.
 	*
 	*/
-	public function __construct($options) {
+	public function __construct($options = array()) {
 		$default = array(
 		  'dsn' => null,
 		  'username' => null,
@@ -63,6 +63,11 @@ class CDatabase {
 
 		$this->stmt = $this->db->prepare($query);
 		$this->stmt->execute($params);
+
+		if(!$this->stmt->execute($params)) {
+				
+			die(dump($this->stmt->errorInfo()));
+		}
 		return $this->stmt->fetchAll();
 	}
 
@@ -75,7 +80,7 @@ class CDatabase {
 	* @return boolean returns TRUE on success or FALSE on failure. 
 	*/
 	public function Execute($query, $params = array(), $debug=false) {
-
+		
 		self::$queries[] = $query; 
 		self::$params[]  = $params; 
 		self::$numQueries++;
@@ -83,9 +88,14 @@ class CDatabase {
 		if($debug) {
 		  echo "<p>Query = <br/><pre>{$query}</pre></p><p>Num query = " . self::$numQueries . "</p><p><pre>".print_r($params, 1)."</pre></p>";
 		}
-
 		$this->stmt = $this->db->prepare($query);
-		return $this->stmt->execute($params);
+
+		if(!$ret = $this->stmt->execute($params)) {
+			if($debug) {
+				dump($this->stmt->errorInfo());
+			}
+		}
+		return $ret;
 	}
 
 	/**

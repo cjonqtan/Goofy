@@ -8,14 +8,18 @@
 <?php endif; ?>
 <?php foreach($stylesheets as $val): ?>
 <link rel='stylesheet' type='text/css' href='<?=$val?>'/>
-<?php endforeach; ?>
+<?php endforeach; 
+if(isset($modernizr)):
+?>
 <script src='<?=$modernizr?>'></script>
+<?php endif; ?>
 </head>
 <body>
   <div id='wrapper'>
     <div id='header'><?=$header?></div>
     <div id="nav"><?=isset($navbar) ? get_navbar($navbar) : null ?></div>
     <div id='main'><?=$main?></div>
+   
     <div id='footer'><?=$footer?></div>
   </div>
 

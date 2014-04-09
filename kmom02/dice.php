@@ -21,7 +21,7 @@ if(isset($_POST['Save'])) {
     // check if player won
     if($round->total > 99) {
         $html .= '<p> DU HAR VUNNIT!!! TOTAL ÄR 100!!!!!';
-        $round = new CGameRound();
+        $round = new CDiceGame();
         $_SESSION['round'] = $round; 
     }
 }

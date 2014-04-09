@@ -22,8 +22,10 @@ function get_title($title) {
 function get_navbar($menu) {
 	$html = "<nav>";
   	foreach($menu['items'] as $item) {
-  		$selected = $menu['callback_selected']($item['url']) ? " class='selected' " : null;
-		$html .= "<a href='{$item['url']}' {$selected}>{$item['text']}</a>";
+  		if(!is_null($item['url'])) {  		
+	  		$selected = $menu['callback_selected']($item['url']) ? " class='selected' " : null;
+			$html .= "<a href='{$item['url']}' {$selected}>{$item['text']}</a>";
+		}
 	}
 	$html .= "</nav>";
 	return $html;
